@@ -1,2 +1,6 @@
-title: ""
-show_title: false
+theme: jekyll-theme-minimal
+
+markdown: kramdown
+
+sass:
+  sass_dir: assets/css

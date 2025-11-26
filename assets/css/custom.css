@@ -1,0 +1,21 @@
+/* Tema header'ını tamamen gizle */
+header,
+.page-header,
+.site-header {
+    display: none !important;
+}
+
+/* Sayfanın en üstünde görünen çizgiyi kaldır */
+body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+}
+
+/* Eğer tema .wrapper veya .container kullanıyorsa */
+.wrapper,
+.container {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
