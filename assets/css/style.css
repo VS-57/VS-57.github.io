@@ -1,13 +1,11 @@
---- ---
-/* Önce tema CSS'ini yükle */
-@import "{{ site.theme }}";
-
-/* Sonra biz override yapıyoruz */
+--- --- @import "{{ site.theme }}";
 
 /* Tema header'ını tamamen gizle */
 header,
 .page-header,
-.site-header {
+.site-header,
+header h1,
+header p {
     display: none !important;
 }
 
