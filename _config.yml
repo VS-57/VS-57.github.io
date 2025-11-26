@@ -1,6 +1,3 @@
 theme: jekyll-theme-minimal
-
-markdown: kramdown
-
-sass:
-  sass_dir: assets/css
+title: ""
+show_title: false
