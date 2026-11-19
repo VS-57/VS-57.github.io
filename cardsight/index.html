@@ -1,59 +1,105 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cardsight: Private Budget</title>
-<meta name="description" content="Cardsight reads your credit card statements and shows where your money goes: spending, subscriptions, upcoming installments and double charges. No account, no bank login.">
-<meta property="og:title" content="Cardsight: Private Budget"><meta property="og:description" content="See every card's spending, from your statements. No account, no bank login."><meta property="og:image" content="https://vs-57.github.io/cardsight/icon.png">
-<link rel="icon" href="icon.png"><link rel="apple-touch-icon" href="icon.png"><link rel="stylesheet" href="style.css"></head>
-<body><main>
-<header class="hero"><img class="appicon" src="icon.png" alt="Cardsight app icon" width="96" height="96">
-<div><h1>Cardsight</h1><p class="tag">See every card's spending, from your statements</p></div></header>
-<nav><a href="#features">Features</a><a href="#contact">Support</a><a href="#help">FAQ</a><a href="#tr">Türkçe</a><a href="privacy.html">Privacy Policy</a></nav>
+<meta name="description" content="Share a credit card statement PDF and Cardsight shows where the money went, which subscriptions renew soon, upcoming installments and double charges. No sign-up, no tracking, no bank linking.">
+<meta name="theme-color" content="#2449C8">
+<meta property="og:title" content="Cardsight: Private Budget">
+<meta property="og:description" content="Every dollar on your card, explained. No sign-up, no tracking, no bank linking.">
+<meta property="og:image" content="https://vs-57.github.io/cardsight/img/icon-256.png">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="./"><img src="img/favicon.png" alt="" width="30" height="30">Cardsight</a>
+  <nav><a class="hide-sm" href="#privacy">How it's private</a><a href="#pricing">Pricing</a><a href="support.html">Support</a></nav>
+</div></header>
 
-<p class="lead">Add a credit card statement (PDF, screenshot or scan) and Cardsight turns it into a clear picture: where your money went, which subscriptions you pay, what installments are still coming and whether anything was charged twice. No account, no bank login, no ads.</p>
+<main>
+<div class="hero"><div class="wrap">
+  <div class="hero-copy">
+    <img class="app-icon" src="img/icon-256.png" alt="Cardsight app icon" width="92" height="92">
+    <h1>Your card statement, made clear</h1>
+    <p class="lead">Share your credit card statement PDF. Cardsight shows where the money went, which subscriptions renew next, what's still due and what got charged twice.</p>
+    <ul class="chips"><li>No sign-up</li><li>No tracking</li><li>No bank linking</li></ul>
+    <a class="store-btn" role="link" aria-disabled="true" title="Coming soon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.89 1.15 9.14.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.76-.96 2.8 1.02.08 2.05-.52 2.68-1.28z"/></svg>
+      <span><small>Coming soon to the</small><strong>App Store</strong></span>
+    </a>
+    <span class="soon">For iPhone and iPad.</span>
+  </div>
+  <div class="hero-shot"><img src="img/01-summary.jpg" alt="Cardsight summary screen: total spending, monthly subscriptions and a double charge warning" width="640" height="1390"></div>
+</div></div>
 
-<div class="shots">
-<img src="shot-01-summary.png" alt="Monthly spending summary by category" loading="lazy">
-<img src="shot-03-subscriptions.png" alt="Subscriptions found automatically" loading="lazy">
-<img src="shot-05-upcoming.png" alt="Upcoming installments and payments" loading="lazy">
-</div>
-
-<section id="features"><h2>What it does</h2>
-<div class="grid">
-<div><h3>Spending by category</h3><p>Every transaction sorted, with totals checked against the statement.</p></div>
-<div><h3>Subscriptions</h3><p>Recurring charges are found for you, with reminders before they renew.</p></div>
-<div><h3>Upcoming installments</h3><p>Know what you still owe in the months ahead, across all your cards.</p></div>
-<div><h3>Double charges</h3><p>The same charge twice? Cardsight points it out.</p></div>
-<div><h3>Private by default</h3><p>Your data stays on your device and in your own iCloud. No account, no tracking.</p></div>
-<div><h3>iPhone, iPad and Mac</h3><p>Synced through your private iCloud.</p></div>
+<section id="features"><div class="wrap">
+  <p class="eyebrow">What it does</p>
+  <h2>What your statement won’t tell you</h2>
+  <p class="lead">Open the PDF in your bank's app or email, tap Share and pick Cardsight. Every line is read and checked against the statement's printed total.</p>
+  <div class="grid four features">
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></svg></div>
+      <h3>Spending by category</h3><p>Every card, month by month, sorted into groceries, dining, bills, travel and more. Fix a category once and it sticks.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></div>
+      <h3>Subscriptions before they renew</h3><p>See what you pay every month and year, and get a reminder before the next charge.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
+      <h3>What's still due</h3><p>Upcoming installments month by month, and a reminder before your card payment is due.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+      <h3>Double charges</h3><p>Paying for the same service twice, or on two cards? Cardsight points it out with the exact lines.</p></div>
+  </div>
+  <div class="shots">
+    <figure><img src="img/03-subscriptions.jpg" alt="Subscriptions screen with monthly and yearly totals" width="640" height="1390" loading="lazy"><figcaption>Subscriptions at a glance</figcaption></figure>
+    <figure><img src="img/05-upcoming.jpg" alt="Upcoming screen with installments by month" width="640" height="1390" loading="lazy"><figcaption>Installments ahead</figcaption></figure>
+    <figure><img src="img/02-settings-reading.jpg" alt="Reading settings: Best reading, Apple only, This device only" width="640" height="1390" loading="lazy"><figcaption>You choose who reads</figcaption></figure>
+  </div>
 </div></section>
 
-<section id="contact"><h2>Contact &amp; support</h2><p>Questions, bug reports or a statement that didn't read well? Write to us. We usually answer within a few days.</p>
-<a class="mail" href="mailto:info@enucuzsistem.com?subject=Cardsight%20support">info@enucuzsistem.com</a></section>
+<section id="privacy" class="alt"><div class="wrap narrow">
+  <p class="eyebrow">How it's private</p>
+  <h2>Your statements stay yours</h2>
+  <p class="lead">There's no account to create and nothing to connect to your bank. No ads, no analytics, no tracking.</p>
+  <ol class="flow">
+    <li><strong>Stored on your device</strong><span>Statements, transactions and your corrections live on your device and in your private iCloud. We never receive them.</span></li>
+    <li><strong>Apple reads first</strong><span>A statement is read by Apple Intelligence, on Apple's Private Cloud Compute or on your device. Apple doesn't keep the data.</span></li>
+    <li><strong>Our server only if you allow it</strong><span>If Apple can't read a statement, Cardsight asks before using our server. Your name and card numbers are masked on your device first, and the PDF itself never leaves it. Nothing is written to disk or used to train AI models.</span></li>
+  </ol>
+  <p class="note">Prefer to keep it all with Apple, or entirely on your device? Choose <em>Apple only</em> or <em>This device only</em> in Settings. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+</div></section>
 
-<section id="help"><h2>Frequently asked questions</h2>
-<h3>How do I add a statement?</h3>
-<p>Open the PDF in your bank's app or in Mail, tap Share and choose Cardsight. You can also tap + in Cardsight and pick a PDF, a screenshot or a scan.</p>
-<h3>Who reads my statement?</h3>
-<p>Apple's private cloud first, which doesn't keep your data. Only if it can't, and only with your permission, our server reads the text, with your name and card numbers masked first. See the <a href="privacy.html">Privacy Policy</a>.</p>
-<h3>The total doesn't match my statement.</h3>
-<p>Cardsight checks every statement against its printed total and opens the review screen when something is off. Bonus or points lines that aren't money are kept apart under Card points. If it's still wrong, email us the bank name (not the statement) and we'll look into it.</p>
-<h3>Can I lock my phone while a statement is read?</h3>
-<p>Yes. Reading continues in the background and its progress shows on the Lock Screen and in the Dynamic Island. If iOS stops it, it picks up the next time you open Cardsight.</p>
-<h3>How do I cancel Premium?</h3>
-<p>Premium is an App Store subscription. Open Settings &gt; your name &gt; Subscriptions on your device, choose Cardsight and tap Cancel Subscription.</p>
-<h3>Where is my data?</h3>
-<p>On your device and in your private iCloud. You can delete it in Settings.</p></section>
+<section id="pricing"><div class="wrap">
+  <p class="eyebrow">Pricing</p>
+  <h2>Start free</h2>
+  <p class="lead">No payment needed to try it. Go Premium when you want every statement read in the cloud.</p>
+  <div class="plans">
+    <div class="card plan">
+      <h3>Free</h3>
+      <div class="price">$0</div>
+      <ul>
+        <li>Reading on this device, unlimited</li>
+        <li>2 statements read in the cloud (reads that fail don't count)</li>
+        <li>Spending by category, subscriptions and double charges</li>
+      </ul>
+    </div>
+    <div class="card plan pro">
+      <h3>Premium <span class="badge">7-day free trial on yearly</span></h3>
+      <div class="price">$2.99 <small>/ month</small></div>
+      <p style="margin:0;color:var(--dim)">or $17.99 / year, half the monthly price</p>
+      <ul>
+        <li>Unlimited cloud reading</li>
+        <li>Every upcoming month in detail</li>
+        <li>Export your transactions as CSV</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Prices in US dollars; the App Store shows the price for your country. Subscriptions renew automatically until you cancel in your Apple Account settings.</p>
+</div></section>
+</main>
 
-<section id="tr" lang="tr"><h2>Türkçe</h2>
-<p>Cardsight kredi kartı ekstreni (PDF, ekran görüntüsü ya da tarama) okur; harcamalarını, aboneliklerini, gelecek taksitlerini ve çift çekimleri gösterir. Hesap yok, banka girişi yok, reklam yok.</p>
-<p>Soru, hata bildirimi ya da iyi okunmayan bir ekstre için <a href="mailto:info@enucuzsistem.com?subject=Cardsight%20destek">info@enucuzsistem.com</a> adresine yazın.</p>
-<h3>Ekstre nasıl eklenir?</h3>
-<p>PDF'i banka uygulamanda ya da Mail'de aç, Paylaş'a dokun ve Cardsight'ı seç. Cardsight'ta + ile PDF, ekran görüntüsü ya da tarama da ekleyebilirsin.</p>
-<h3>Ekstremi kim okuyor?</h3>
-<p>Önce Apple'ın özel bulutu okur ve verini saklamaz. Yalnızca okuyamazsa ve iznin varsa sunucumuz metni okur; adın ve kart numaraların önce maskelenir.</p>
-<h3>Okurken telefonu kilitleyebilir miyim?</h3>
-<p>Evet. Okuma arka planda sürer, ilerlemesi kilit ekranında ve Dynamic Island'da görünür. iOS durdurursa Cardsight'ı açtığında kaldığı yerden devam eder.</p>
-<h3>Premium'u nasıl iptal ederim?</h3>
-<p>Ayarlar &gt; adın &gt; Abonelikler'e gir, Cardsight'ı seç ve Aboneliği İptal Et'e dokun.</p></section>
-
-<footer>© 2026 Osman Cengeri · <a href="privacy.html">Privacy Policy</a></footer>
-</main></body></html>
+<footer><div class="wrap">
+  <span>© 2026 Osman Cengeri</span>
+  <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></nav>
+</div></footer>
+</body>
+</html>
