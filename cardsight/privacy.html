@@ -19,12 +19,12 @@
 <main class="wrap narrow">
 <div class="page-head">
   <h1>Privacy Policy</h1>
-  <p>Cardsight · Last updated November 19, 2026</p>
+  <p>Cardsight · Last updated November 21, 2026</p>
 </div>
 
 <div class="doc">
 <section class="card" id="summary"><h2>Summary</h2>
-<p>Your card statements stay on your device and in your own iCloud. There are no accounts, no ads, no analytics and no tracking. Apple's Private Cloud Compute reads a statement first and doesn't keep it. Only if Apple can't, and only with your permission, the statement's text goes to our server to be read. Nothing you send is kept on our server or used to train AI models.</p></section>
+<p>Your card statements stay on your device and in your own iCloud. There are no accounts, no ads, no analytics and no tracking. Apple's Private Cloud Compute reads a statement first and doesn't keep it. Only if Apple can't, and only with your permission, the statement's text goes to our server to be read. Nothing you send is used to train AI models, and nothing is kept on our server, with one exception during the test phase: if a reading fails, its masked text is kept encrypted for up to 14 days so we can fix the error.</p></section>
 
 <section class="card" id="stored"><h2>What the app stores</h2>
 <ul><li>The statements you add, their transactions, categories and your corrections.</li>
@@ -35,7 +35,7 @@
 <p><strong>Apple first.</strong> A statement is read by Apple Intelligence: Private Cloud Compute, or on your device. Apple doesn't keep the data.</p>
 <p><strong>Our server, only with your permission.</strong> If Apple can't read a statement and you allow it (setting "Best reading"), the statement's text is sent to our server. Your name and card numbers are masked on your device first, and the PDF itself never leaves your device. Our server has it read by an AI model: Anthropic's Claude, and Google's Gemini as a backup, through their paid APIs, whose terms don't allow training on this data. The providers may keep request data for a short time to detect abuse, under their own terms (<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://ai.google.dev/gemini-api/terms">Google</a>).</p>
 <p><strong>Categories.</strong> With the same permission, merchant names (never amounts or dates) may be sent to our server to sort categories.</p>
-<p><strong>What our server keeps.</strong> Nothing is written to disk. The answer is held in memory for up to 10 minutes so a retried request gets the same answer; merchant-name categories are held in memory to avoid asking again. Server logs contain only counts, timings and error codes, never statement text, merchant names or amounts.</p>
+<p><strong>What our server keeps.</strong> A successful reading is not written to disk. The answer is held in memory for up to 10 minutes so a retried request gets the same answer; merchant-name categories are held in memory to avoid asking again. <strong>During the test phase only:</strong> if a reading fails or looks wrong, the masked statement text our server received and its answer are kept, encrypted, so we can find and fix the error. They are deleted automatically after at most 14 days, are not linked to your device, IP address or purchases, and are never used to train AI models. This will be switched off before the public release, and this page will be updated. Server logs contain only counts, timings and error codes, never statement text, merchant names or amounts.</p>
 <p>Choose "Apple only" (Apple's Private Cloud Compute, or this device when offline) or "This device only" in Settings and nothing reaches us.</p></section>
 
 <section class="card" id="device-check"><h2>Device check and usage limits</h2>
