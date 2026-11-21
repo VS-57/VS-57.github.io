@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cardsight Privacy Policy</title>
-<meta name="description" content="Privacy policy of the Cardsight app for iPhone and iPad.">
+<meta name="description" content="Privacy policy of the Cardsight app for iPhone.">
 <meta name="theme-color" content="#2449C8">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -24,22 +24,23 @@
 
 <div class="doc">
 <section class="card" id="summary"><h2>Summary</h2>
-<p>Your card statements stay on your device and in your own iCloud. There are no accounts, no ads, no analytics and no tracking. Apple's Private Cloud Compute reads a statement first and doesn't keep it. Only if Apple can't, and only with your permission, the statement's text goes to our server to be read. Nothing you send is used to train AI models, and nothing is kept on our server, with one exception during the test phase: if a reading fails, its masked text is kept encrypted for up to 14 days so we can fix the error.</p></section>
+<p>Your card statements are stored on your device and in your own iCloud. There are no accounts, no ads, no tracking and no analytics SDKs; <a href="#purchases">RevenueCat</a> records purchases and trials only. Apple Intelligence reads a statement first, on your device or in Apple's Private Cloud Compute, and Apple doesn't keep it. Only if Apple can't, and only with your permission, the statement's masked text goes to our server, which has it read by an AI model from Anthropic (Claude) or, as a backup, Google (Gemini). Nothing you send is used to train AI models. Our server doesn't store your statements, with one exception during the test phase: if a reading fails, its masked text is kept encrypted for up to 14 days so we can fix the error. The AI providers may keep request data for a short time to detect abuse.</p></section>
 
 <section class="card" id="stored"><h2>What the app stores</h2>
 <ul><li>The statements you add, their transactions, categories and your corrections.</li>
 <li>Your cards, reminders and settings.</li></ul>
-<p>This data is stored on your device and, if iCloud is on, in your private iCloud database, which only you can read. It is never sent to us. You can delete it at any time in Settings.</p></section>
+<p>This data is stored on your device and, if iCloud is on, in your private iCloud database, which only you can read. We can't see it. You can delete it at any time in Settings.</p></section>
 
 <section class="card" id="reading"><h2>How statements are read</h2>
 <p><strong>Apple first.</strong> A statement is read by Apple Intelligence: Private Cloud Compute, or on your device. Apple doesn't keep the data.</p>
 <p><strong>Our server, only with your permission.</strong> If Apple can't read a statement and you allow it (setting "Best reading"), the statement's text is sent to our server. Your name and card numbers are masked on your device first, and the PDF itself never leaves your device. Our server has it read by an AI model: Anthropic's Claude, and Google's Gemini as a backup, through their paid APIs, whose terms don't allow training on this data. The providers may keep request data for a short time to detect abuse, under their own terms (<a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://ai.google.dev/gemini-api/terms">Google</a>).</p>
 <p><strong>Categories.</strong> With the same permission, merchant names (never amounts or dates) may be sent to our server to sort categories.</p>
 <p><strong>What our server keeps.</strong> A successful reading is not written to disk. The answer is held in memory for up to 10 minutes so a retried request gets the same answer; merchant-name categories are held in memory to avoid asking again. <strong>During the test phase only:</strong> if a reading fails or looks wrong, the masked statement text our server received and its answer are kept, encrypted, so we can find and fix the error. They are deleted automatically after at most 14 days, are not linked to your device, IP address or purchases, and are never used to train AI models. This will be switched off before the public release, and this page will be updated. Server logs contain only counts, timings and error codes, never statement text, merchant names or amounts.</p>
-<p>Choose "Apple only" (Apple's Private Cloud Compute, or this device when offline) or "This device only" in Settings and nothing reaches us.</p></section>
+<p>Choose "Apple only" (Apple's Private Cloud Compute, or this device when offline) or "This device only" in Settings → Reading and no statement text or merchant name reaches us.</p></section>
 
 <section class="card" id="device-check"><h2>Device check and usage limits</h2>
-<p>Apple App Attest confirms requests come from the real app. We keep an anonymous key ID and a counter, nothing that identifies you. To apply daily reading limits, our server also counts how many statements each anonymous key ID sent that day; for Premium, it notes which anonymous key IDs used the same App Store subscription that day. These IDs are stored only as salted hashes, and the daily counts are deleted when the day ends.</p></section>
+<p>Apple App Attest confirms requests come from the real app. We keep an anonymous key ID and a counter, nothing that identifies you. To apply daily reading limits, our server also counts how many statements each anonymous key ID sent that day; for Premium, it notes which anonymous key IDs used the same App Store subscription that day. These IDs are stored only as salted hashes, and the daily counts are deleted when the day ends.</p>
+<p><strong>Reinstall check.</strong> So that deleting and reinstalling the app doesn't reset the free daily reading limit, our server uses Apple DeviceCheck: Apple stores two bits per device for us. They don't identify you or your device to us, count only for the current month, and are kept by Apple.</p></section>
 
 <section class="card" id="permissions"><h2>Permissions</h2>
 <p><strong>Notifications</strong> (optional): local reminders before a card payment is due and before subscriptions renew, scheduled on your device.</p></section>
@@ -47,11 +48,27 @@
 <section class="card" id="purchases"><h2>Purchases (Cardsight Premium)</h2>
 <p>Cardsight Premium is an App Store subscription. Payment is handled by Apple; we never see your payment details. We use <a href="https://www.revenuecat.com/privacy">RevenueCat</a> to record purchases and trials, with your App Store purchase history for Cardsight and a random, anonymous user ID. It receives none of your statements or app data. To apply the Premium quota, the app may send our server a signed App Store transaction for Cardsight.</p></section>
 
+<section class="card" id="what-we-collect"><h2>Data that leaves your device, in short</h2>
+<ul><li><strong>Financial information</strong>: masked statement text and merchant names, only with your permission, to read the statement and sort categories (see above). Not linked to you.</li>
+<li><strong>Purchase history</strong>: App Store purchases and trials of Cardsight, through Apple and RevenueCat, to provide Premium and see how subscriptions and trials perform. Not linked to your identity.</li>
+<li><strong>Device identifiers</strong>: the anonymous App Attest key ID (as a salted hash) and Apple's DeviceCheck bits, to prevent abuse and apply limits. Not linked to you.</li></ul>
+<p>None of this is used for tracking or advertising, sold, or combined with data from other companies.</p></section>
+
+<section class="card" id="third-parties"><h2>Service providers</h2>
+<p>We share data only with the providers named on this page: Apple (Private Cloud Compute, App Store, App Attest, DeviceCheck, iCloud), Anthropic and Google (reading statements, only with your permission), and RevenueCat (purchases). They process data under contracts or terms that protect it at least as well as this policy, and only to provide their service to us. Our server and these providers may process data outside your country.</p></section>
+
+<section class="card" id="choices"><h2>Your choices and rights</h2>
+<ul><li><strong>Withdraw permission</strong> at any time: Settings → Reading → "Apple only" or "This device only". The app then sends no statement text or merchant names to our server.</li>
+<li><strong>Delete your data</strong>: Settings → Delete all data removes everything the app stores on your device and in your iCloud. Deleting the app also removes it from the device.</li>
+<li><strong>Data on our server</strong> is not linked to you, so we can't find one person's copy. It is deleted on the schedule above: answers in memory after at most 10 minutes, test-phase copies of failed readings after at most 14 days, daily counts at the end of the day.</li>
+<li>For any other request about your data, including your rights under GDPR or Turkey's KVKK (access, correction, deletion, objection), email us at the address below.</li></ul></section>
+
 <section class="card" id="contact"><h2>Contacting us</h2>
-<p>If you email us, we use your message and email address only to answer you. Contact: <a href="mailto:info@enucuzsistem.com">info@enucuzsistem.com</a></p></section>
+<p>If you email us, we use your message and email address only to answer you. Contact: <a href="mailto:info@enucuzsistem.com">info@enucuzsistem.com</a></p>
+<p>Data controller: Osman Cengeri, developer of Cardsight, <a href="mailto:info@enucuzsistem.com">info@enucuzsistem.com</a>.</p></section>
 
 <section class="card" id="children"><h2>Children</h2>
-<p>Cardsight does not collect personal data from anyone, including children.</p></section>
+<p>Cardsight is not directed at children, and we don't knowingly collect personal data from children.</p></section>
 
 <section class="card" id="changes"><h2>Changes</h2>
 <p>If this policy changes, the new version will be published on this page with a new date.</p></section>
